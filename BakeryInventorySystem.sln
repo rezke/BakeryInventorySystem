@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BakeryInventorySystem", "BakeryInventorySystem\BakeryInventorySystem.csproj", "{A1BEB35C-9F90-438A-862F-2B30239FC724}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{CB9AED94-6D3E-4568-A696-E46A6F6CEA5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A1BEB35C-9F90-438A-862F-2B30239FC724}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1BEB35C-9F90-438A-862F-2B30239FC724}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1BEB35C-9F90-438A-862F-2B30239FC724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB9AED94-6D3E-4568-A696-E46A6F6CEA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB9AED94-6D3E-4568-A696-E46A6F6CEA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB9AED94-6D3E-4568-A696-E46A6F6CEA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB9AED94-6D3E-4568-A696-E46A6F6CEA5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
