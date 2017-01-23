@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BakeryInventorySystem.UserControls;
 
 namespace BakeryInventorySystem
 {
@@ -19,82 +20,84 @@ namespace BakeryInventorySystem
 
         private void MainForm_Load(object sender, EventArgs e)
         {            
-            pnlInvoices.Visible = false;
-            pnlSales.Visible = false;
-            pnlProducts.Visible = false;
-            pnlIngredients.Visible = false;
-            pnlStock.Visible = false;
-            pnlHelp.Visible = false;
-       //     pnlInvoices.Show();        
+          
 
         }
 
         private void btnInvoices_Click(object sender, EventArgs e)
         {
-
-            pnlInvoices.Visible = true;
-            pnlSales.Visible = false;
-            pnlProducts.Visible = false;
-            pnlIngredients.Visible = false;
-            pnlStock.Visible = false;
-            pnlHelp.Visible = false;
-            pnlInvoices.Show();
-           
+            if (!pnlMain.Controls.Contains(ucInvoices.Instance))
+            {
+                pnlMain.Controls.Add(ucInvoices.Instance);
+                ucInvoices.Instance.Dock = DockStyle.Fill;
+                ucInvoices.Instance.BringToFront();
+            }
+            else
+                ucInvoices.Instance.BringToFront();
         }
 
         private void btnSales_Click(object sender, EventArgs e)
         {
+            if (!pnlMain.Controls.Contains(ucSales.Instance))
+            {
+                pnlMain.Controls.Add(ucSales.Instance);
+                ucSales.Instance.Dock = DockStyle.Fill;
+                ucSales.Instance.BringToFront();
+            }
+            else
+                ucSales.Instance.BringToFront();
 
-            pnlInvoices.Visible = false;
-            pnlSales.Visible = true;
-            pnlProducts.Visible = false;
-            pnlIngredients.Visible = false;
-            pnlStock.Visible = false;
-            pnlHelp.Visible = false;
-            pnlSales.Show();
         }
 
         private void btnItems_Click(object sender, EventArgs e)
-        {       
-            pnlSales.Visible = false;
-            pnlProducts.Visible = false;
-            pnlIngredients.Visible = true;
-            pnlStock.Visible = false;
-            pnlHelp.Visible = false;
-            pnlIngredients.Show();
+        {
+            if (!pnlMain.Controls.Contains(ucItems.Instance))
+            {
+                pnlMain.Controls.Add(ucItems.Instance);
+                ucItems.Instance.Dock = DockStyle.Fill;
+                ucItems.Instance.BringToFront();
+            }
+            else
+                ucItems.Instance.BringToFront();
         }
 
         private void btnProducts_Click(object sender, EventArgs e)
         {
+            if (!pnlMain.Controls.Contains(ucProducts.Instance))
+            {
+                pnlMain.Controls.Add(ucProducts.Instance);
+                ucProducts.Instance.Dock = DockStyle.Fill;
+                ucProducts.Instance.BringToFront();
+            }
+            else
+                ucProducts.Instance.BringToFront();
 
-            pnlSales.Visible = false;
-            pnlProducts.Visible = true;
-            pnlIngredients.Visible = false;
-            pnlStock.Visible = false;
-            pnlHelp.Visible = false;
-            pnlProducts.Show();
         }
 
         private void btnStock_Click(object sender, EventArgs e)
         {
+            if (!pnlMain.Controls.Contains(ucStock.Instance))
+            {
+                pnlMain.Controls.Add(ucStock.Instance);
+                ucStock.Instance.Dock = DockStyle.Fill;
+                ucStock.Instance.BringToFront();
+            }
+            else
+                ucInvoices.Instance.BringToFront();
 
-            pnlSales.Visible = false;
-            pnlProducts.Visible = false;
-            pnlIngredients.Visible = false;
-            pnlStock.Visible = true;
-            pnlHelp.Visible = false;
-            pnlStock.Show();
         }
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
+            if (!pnlMain.Controls.Contains(ucHelp.Instance))
+            {
+                pnlMain.Controls.Add(ucHelp.Instance);
+                ucHelp.Instance.Dock = DockStyle.Fill;
+                ucHelp.Instance.BringToFront();
+            }
+            else
+                ucHelp.Instance.BringToFront();
 
-            pnlSales.Visible = false;
-            pnlProducts.Visible = false;
-            pnlIngredients.Visible = false;
-            pnlStock.Visible = false;
-            pnlHelp.Visible = true;
-            pnlHelp.Show(); 
         }
     }
 }
