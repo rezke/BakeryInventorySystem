@@ -55,7 +55,7 @@ namespace BakeryInventorySystem.UserControls
         private void btnEdit_Click(object sender, EventArgs e)
         {    
             
-            int id = (int)dgvIngredients.CurrentRow.Cells[0].Value;
+            int id = (int) dgvIngredients.CurrentRow.Cells[0].Value;
             Ingredient ingredient = _context.Ingredients.Find(id);
             Ingredient newIngredient = new Ingredient();
             newIngredient.Name = tbName.Text;

@@ -27,5 +27,10 @@ namespace BakeryInventorySystem.UserControls
         {
             InitializeComponent();
         }
+
+        private void ucProducts_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
